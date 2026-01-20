@@ -63,7 +63,9 @@ header {
 
 /* Button */
 .btn1 {
-    display: flex;
+  width: 135px;
+height: 44px;
+  display: flex;
   align-items: center;
   gap: 4px;
   padding: 12px 16px;
@@ -72,34 +74,27 @@ header {
   cursor: pointer;
   font-size: 15px;
   font-weight: 600;
-  color: #fff;
+  color: #ffffff;
   background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
-.btn-arrow {
+.btn-arrow{
   width: 40px;
   height: 40px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 12px;
-
   font-size: 20px;
 }
 
 
 /* Mobile responsive for navbar*/
-
-
 @media (max-width: 576px) {
   .navbar { 
     background-image: url(./assets/hamburger-menu.png);
     background-repeat: no-repeat;
-    background-position: right 20px center; /* 🔥 move to right */
-    background-size: 24px;                  /* control icon size */
+    background-position: right 20px center; 
+    background-size: 24px;                 
     padding: 16px 20px;
   }
   .option {
@@ -166,12 +161,9 @@ header {
   background-size: cover;  
 }
 
-/* Mic icon */
 .mic {
   width: 80px;
 }
-
-/* NEW badge */
 .badge {
   position: absolute;
   top: 30px;
@@ -183,8 +175,6 @@ header {
   padding: 6px 12px;
   border-radius: 20px;
 }
-
-/* Text */
 .hero-content h2 {
     width: 550px;
     height: 73px;
@@ -202,8 +192,6 @@ header {
   margin-bottom: 24px;
  
 }
-
-/* Buttons */
 .hero-buttons {
   display: flex;
   gap: 8px;
@@ -289,14 +277,12 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
   text-align: center;
 }
 
-/* Heading */
 .about-content h2 {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 24px;
 }
 
-/* Text */
 .about-text {
   max-width: 900px;
   margin: 0 auto 20px;
@@ -312,7 +298,6 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
   opacity: 0.7;
 }
 
-/* Stats */
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -330,7 +315,6 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
   letter-spacing: 1px;
   opacity: 0.7;
 }
-/* for about content */
 @media (max-width: 576px) {
   .about-content {
     width: 100%;
@@ -602,16 +586,15 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 /* For Footer */
 
 .footer {
-  background:url(./assets/footer-bg.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
+
+   background: url(./assets/footer-bg.png) center/cover no-repeat;
+  padding: 80px 16px;
 
 }
 
 .footer-inner {
-  max-width: 1360px;
+
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -629,6 +612,7 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
   gap: 32px;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 .footer-links a {
@@ -664,6 +648,10 @@ background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(2
 }
 
 @media (max-width: 576px) {
+   .footer {
+   padding: 60px 16px;
+    background-position: center top;
+  }
   .footer-links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
